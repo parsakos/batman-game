@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Batman!</title>
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/monokai.min.css">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        
+        <h1>Awesome Batman Game!</h1>
+
+        <canvas width="700" height="250" class="canvas"></canvas>
+
+        <section>
+            <h1>How to play</h1>
+            <ul>
+                <li><strong>Left arrow</strong>: start running!</li> 
+                <li><strong>Up arrow</strong>: jump!</li> 
+                <li><strong>Bottom arrow</strong>: stop!</li> 
+            </ul>
+        </section>
+
+        
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+
+        <script src="javascript/Utils.js"></script>
+        <script src="javascript/GameLoop.js"></script>
+        <script src="javascript/Game.js"></script>
+        <script src="javascript/app.js"></script>
+        <script src="javascript/implementation.js"></script>
+        <script>
+            const all = document.querySelectorAll('pre code');
+            Array.from( all ).forEach((el) => {
+                hljs.highlightBlock( el );
+            });
+        </script>
+    </body>
+</html>
